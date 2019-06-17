@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Esercizio</title>
+</head>
+<body>
+    <input type="button" class="diProva2" id="btn" value="0">
+</body>
+</html>
+
+<script>
+    var button = document.getElementById("btn");
+    var i = 0;
+    button.addEventListener("click", function () {
+        i++;
+        i.toString();
+        button.className = "diProva2";
+        button.setAttribute("value", i);
+
+
+    });
+
+
+    function nascondino() {
+        button.className("diProva");
+    }
+</script>
+
+
+<!--var i = 0;
+    button.addEventListener("click", function () {
+        i++;
+        i.toString();
+        button.className="diProva2";
+        button.setAttribute("value", i);-->
+
+<style>
+    .diProva {
+        color: brown;
+        background-color:;
+        margin-left: 400px;
+        margin-top: 100px;
+        height: 500px;
+        width: 500px;
+        display: none;
+    }
+
+    .diProva2 {
+        color: brown;
+        background-color: cornsilk;
+        margin-left: 400px;
+        margin-top: 100px;
+        height: 500px;
+        width: 500px;
+        display: block;
+    }
+</style>
